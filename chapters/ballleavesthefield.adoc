@@ -1,0 +1,37 @@
+== Ball Leaves The Field
+When the ball leaves the field by fully crossing the <<Field Lines, field line>>, the game will be stopped, the ball will be placed and the game will be restarted depending on the position of the field line crossing as well as on the team that last touched the ball.
+
+=== Touch Line Crossing
+Touch lines are the long <<Field Lines, field lines>> at both sides of the playing field.
+
+==== Throw-In
+.Definition
+The ball has to be placed 0.2 meters perpendicular to the touch line where the ball crossed the touch line. Its distance to the goal lines must be at least 0.2 meters.
+
+After the ball has been placed, an <<Indirect Free Kick, indirect free kick>> is awarded to the opponent of the team that last touched the ball before it left the field.
+
+.Usage
+A throw-in is used to restart the game after the ball left the field by crossing the touch line.
+
+=== Goal Line Crossing
+Goal lines are the short <<Field Lines, field lines>> at both ends of the playing field.
+
+==== Goal Kick
+.Definition
+The ball has to be placed 0.2 meters from the closest touch line and 1 meter from the goal line.
+
+After the ball has been placed, a <<Direct Free Kick, direct free kick>> is awarded to the opponent of the team that last touched the ball before it left the field.
+
+.Usage
+A goal kick is used to restart the game after the ball left the field by crossing the goal line of the team that did not touch the ball last.
+
+NOTE: In division B, the <<Aimless Kick [small]#(_division B only_)#, aimless kick rule>> might apply instead.
+
+==== Corner Kick
+.Definition
+The ball has to be placed 0.2 meters from the closest touch line and 0.2 meters from the goal line.
+
+After the ball has been placed, a <<Direct Free Kick, direct free kick>> is awarded to the opponent of the team that last touched the ball before it left the field.
+
+.Usage
+A corner kick is used to restart the game after the ball left the field by crossing the goal line of the team that touched the ball last.
