@@ -1,4 +1,5 @@
-== Offenses
+== Offensese
+== 犯规
 Offenses are divided into multiple categories according to the seriousness of the offense: <<Minor Offenses, minor offenses>>, <<Fouls, fouls>> and <<Unsporting Behavior, unsporting behavior>>.
 
 NOTE: Rule of thumb: Minor offenses are infringements of the rules committed by an attacking robot while the ball is <<Ball In And Out Of Play, in play>>. Fouls are infringements of the rules committed by a defender or while the ball is <<Ball In And Out Of Play, out of play>> or infringements that may harm the humans, the robots or the field.
@@ -108,42 +109,42 @@ If a robot other than the keeper touches the ball while being partially inside i
 If a robot other than the keeper touches the ball while being entirely inside its own defense area, the game is stopped and a <<Penalty Kick, penalty kick>> is awarded to the other team. The foul counter is not increased.
 
 
-=== Unsporting Behavior
-Unsporting behavior can lead to <<Yellow Card, yellow cards>>, <<Red Card, red cards>>, <<Penalty Kick, penalty kicks>>, a <<Forced Forfeit, forced forfeit>> or a <<Disqualification, disqualification>>. The human <<Referee, referee>> chooses an appropriate sanction, depending on the severity of the offense.
+=== 违背体育精神的行为
+违背体育精神的行为会导致 <<Yellow Card, yellow cards>>, <<Red Card, red cards>>, <<Penalty Kick, penalty kicks>>, a <<Forced Forfeit, forced forfeit>> or a <<Disqualification, disqualification>>. <<Referee, referee>> 会根据犯规的严重程度选择适当的处罚。
 
-NOTE: If the referee is not sure which sanction to choose, he may confer with members of the <<Technical Committee, technical committee>> or the <<Organizing Committee, organizing committee>>.
+注意：如果裁判员不知道选择什么处罚，他可以向 <<Technical Committee, technical committee>> 或者 <<Organizing Committee, organizing committee>> 的成员咨询。
 
-Some examples of unsporting behavior are listed below.
+下面列出一些违背体育精神行为的示例。
 
-==== Damaging Other Robots
-It is not allowed to damage or modify robots of other teams.
+==== 破坏其他机器人
+不允许破坏或改装其他队伍的机器人。
 
-==== Damaging The Field Or The Ball
-It is not allowed to damage or modify the field or the ball.
+==== 破坏场地或比赛用球
+不允许破坏或改变场地或比赛用球
 
-==== Showing Lack Of Respect
-A team member must show appropriate respect to everyone involved in the game. Infringements of this rule include but are not limited to:
+==== 缺乏尊重
+团队成员必须对参与比赛的每一个人表现出适当的尊重。违反本规则的行为包括但不限于：
+*侮辱对手、<Referee, referee>> 或其他担任 <<Impartial Roles, impartial role>> 的人
+*激怒 <<Referee, referee>> 或其他担任 <<Impartial Roles, impartial role>> 的人
+*不遵守 <<Referee, referee>> 的指令
 
-* insulting the opponent, the <<Referee, referee>> or other persons holding an <<Impartial Roles, impartial role>>
-* annoying the <<Referee, referee>> or other persons holding an <<Impartial Roles, impartial role>>
-* not obeying the orders of the <<Referee, referee>>
+=== 同时犯规
+如果游戏 <<Stop, stopped>> 并且一个队伍被允许 <<Resuming The Game, resume the game>> ，该队伍对手的 <<Minor Offenses, minor offenses>> 和 <<Fouls, fouls>>不会影响恢复游戏的方法与位置， 除非结果方法是
+<<Penalty Kick, penalty kick>>。
 
-=== Simultaneous Offenses
-If the game is <<Stop, stopped>> and a team is allowed to <<Resuming The Game, resume the game>>, <<Minor Offenses, minor offenses>> and <<Fouls, fouls>> of this team's opponent don't affect the method and position of the resumption of the game, except if the resulting method is a <<Penalty Kick, penalty kick>>.
+如果一个队伍利用了这个规则，裁判员可以签发一张 <<Yellow Card, yellow card>> 来惩罚该队伍的 <<Unsporting Behavior,unsporting behavior>>。
 
-If a team exploits this rule, the referee may punish this team for <<Unsporting Behavior,unsporting behavior>> by issuing a <<Yellow Card, yellow card>>.
-
-NOTE: This rule is in place to prevent teams from purposely committing offenses in order to relocate the opponent <<Direct Free Kick, direct free kick>> or <<Indirect Free Kick, indirect free kick>> to a more favorable position.
+注意：该规则旨在防止队伍故意犯规，以便将对手的 <<Direct Free Kick, direct free kick>> 或 <<Indirect Free Kick, indirect free kick>> 重新定位到更有利的位置。
 
 === Advantage Rule
-In certain situations, stopping the game because of a foul may have a disadvantage to the opposing team.
-As these situations are not easy to detect automatically, the opposing team is asked if it likes to continue the game.
-In this case, the game is not stopped and no direct kick is awarded at any time.
-The foul counter is still incremented and any resulting cards are given when the game is <<Stop,stopped>>.
+在某些情况下，由于犯规而停止比赛可能对对方不利。
+由于这些情况不容易自动检测到，因此会询问对方是否选择继续比赛。
+在这种情况下，游戏不会停止，也不会授予任意球。
+当游戏 <<stop，stopped>> 时，犯规计数器仍然递增，并仍会给出红黄牌。
 
-.Fouls that are considered
+犯规会被认为是：
 
-* <<Crashing>>, if not both teams committed the foul
+* <<Crashing>> 如果不是两个队都犯规的话
 * <<Attacker Touches Robot In Opponent Defense Area>>
 
-NOTE: If the team is not connected to the game controller or does not reply within 0.2 seconds, the decision of the team defaults to stopping the game.
+注意：如果团队没有连接到游戏控制器或在0.2秒内没有回复，则团队的决定默认为停止游戏。
