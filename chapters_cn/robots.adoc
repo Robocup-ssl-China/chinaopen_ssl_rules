@@ -1,54 +1,54 @@
-== 机器人
+== Robots
 
-=== 机器人的数量
-比赛由两个队进行，每个队由不超过8个的A区机器人和不超过6个的B区机器人组成，其中一个可以是守门员。每个机器人必须根据其视觉图案清晰地编号，以便裁判在比赛中识别它。在比赛前必须指定守门员的ID（参见<<Selecting Keeper ID>>）。
+=== Number Of Robots
+A match is played by two teams, with each team consisting of not more than 8 robots in division A and not more than 6 robots in division B, one of which may be the keeper. Each robot must be clearly numbered according to its vision pattern so that the referee can identify it during the match. The id of the keeper must be chosen before the match starts (see <<Choosing Keeper Id>>).
 
-=== 软件和硬件限制
-如果不符合 <<Referee, referee>> 规则，可以强制一队从场地上移除机器人。<<Technical Committee, technical committee>> 的成员也可以在比赛的任何时刻检查机器人的硬件和软件限制。
+=== Hardware And Software Constraints
+The <<Referee, referee>> may force a team to remove a robot from the field if it does not satisfy the rules. Members of the <<Technical Committee, technical committee>> may also check the hardware and software constraints of robots at any point of the tournament.
 
-如果一个团队无法提供至少一个满足规则的机器人，该团队将被 <<Forced Forfeit, forced to forfeit>>
+If a team is not able to provide at least one robot that satisfies the rules, the team is <<Forced Forfeit, forced to forfeit>>.
 
-==== 安全性
-机器人不得对自身，其他机器人或人类构成危险。它绝不能 <<Damaging The Field Or The Ball, damage or modify the ball or the field>>。
+==== Safety
+A robot must not pose danger to itself, another robot, or humans. It must not <<Damaging The Field Or The Ball, damage or modify the ball or the field>>.
 
-如果 <<Referee, referee>> 认为某个机器人存在潜在的安全威胁，他必须强迫该团队将该机器人从现场移走。
+The <<Referee, referee>> has to force a team to remove a robot from the field if he considers it a potential safety threat.
 
-==== 形状
-任何机器人必须装在0.18米宽、0.15米高的圆筒内。此外，机器人的顶部必须符合标准的图案尺寸和表面约束。
+==== Shape
+A robot must fit inside a 0.18 meters wide and 0.15 meters high cylinder at any point in time. Additionally, the top of the robot must adhere to the standard pattern size and surface constraints.
 
-==== 运球装置
-在以下条件下允许安装使球旋转的运球装置，使球与机器人保持接触：
+==== Dribbling Device
+Dribbling devices that actively exert spin on the ball, which keep the ball in contact with the robot are permitted under certain conditions:
 
-* 运球装置不得将球从地面抬起
-* 另一个机器人必须能够用球从机器人中取出球。
-* 机器人不得通过移除球的所有自由度来完全控制球。
-* 任何时刻，从上方看球时，球的80％面积必须位于机器人周围的凸包外面。 这种限制也适用于所有踢球装置。
+* The dribbling device must not elevate the ball from the ground
+* Another robot must be able to remove the ball from a robot with the ball.
+* A robot must not take full control of the ball by removing all of its degrees of freedom.
+* 80% of the area of the ball when viewed from above has to be outside the convex hull around the robot. This limitation applies as well to all kicking devices, even if such infringement is momentary.
 
-==== 视觉图案
-所有参赛团队必须遵守 <<Vision, shared vision system>> 的既定操作要求。 尤其是，团队必需在他们的机器人顶部使用一组标准化的颜色和图案。
+==== Vision Pattern
+All participating teams must adhere to the given operating requirements of the <<Vision, shared vision system>>. In particular, teams are required to use a certain set of standardized colors and patterns on top of their robots.
 
-为确保与共享视觉系统的标准化模式兼容，所有团队必须确保所有机器人都有一个平坦的表面，顶部有足够的空间。 机器人顶部的颜色必须是黑色或深灰色，并具有哑光（无光泽）表面，以减少眩光。 标准视觉图案是半径为0.085米的圆形，在机器人正面线性切割到距离中心0.055米的距离，如 <<standard-vision-pattern, figure 5>> 所示。 团队必须确保图案完整出现在他们的机器人顶部。
+To ensure compatibility with the standardized patterns for the shared vision system, all teams must ensure that all robots have a flat surface with sufficient space available on the top side. The color of the robot top must be black or dark grey and have a matte (non-shiny) finish to reduce glare. The standard vision pattern is guaranteed to fit within a circle with a radius of 0.085 meters that is linearly cut off on the front side of the robot to a distance of 0.055 meters from the centre, as shown in <<standard-vision-pattern, figure 5>>. Teams must ensure that their robot tops fully enclose this area.
 
 [[standard-vision-pattern]]
 .Standard Vision Pattern Dimensions
 image::standard_pattern2010.png[]
 
-每个机器人的图案都必须是<<standard-vision-colors, figure 6>>所示图案中的一种。不允许两个机器人使用同一个图案。
+Every robot must have one of the 16 patterns shown in <<standard-vision-colors, figure 6>>. No two robots are allowed to use the same pattern.
 
-机器人中间的圆点颜色决定队伍的归属，并且颜色要么是蓝色要么是黄色（参考<<Choosing Team Colors>>)。其他四个圆点颜色编码机器人的ID。为了保证每个队伍使用相同的颜色，<<Organizing Committee, organizing committee>>在比赛中提供足够的彩色纸张。
+The center dot color determines the team and is either blue or yellow (see <<Choosing Team Colors>>). The other four dot colors encode the id of the robot. To ensure that every team uses the same colors, the <<Organizing Committee, organizing committee>> provides enough colored paper at the competition.
 
-NOTE: 鼓励团队选择ID为0到7的颜色分配，因为他们在实验中被发现更稳定，因为后面的两个点“color-bleed”彼此之间没有风险。
+NOTE: Teams are encouraged to prefer color assignments with ids 0 to 7 because they have been experimentally found more stable, as there is no risk that the back two dots “color-bleed” into each other.
 
 .Standard Vision Pattern Colors
 [[standard-vision-colors]]
 image::standard_colors2010.png[width=500]
 
-==== 无线电通信
-使用无线通信的队伍必须通知 <<Organizing Committee, organizing committee>> 无线通信的方法，电源和频率。报名后如有任何变动，必须尽快通知<<Organizing Committee, organizing committee>>。为了避免干扰，一个团队必须能够在匹配之前从两个载波频率中进行选择。无线通信的类型必须符合举办比赛国家的法律规定。遵守当地法律是竞争团队的责任。
+==== Radio Communication
+Participants using wireless communications must notify the <<Organizing Committee, organizing committee>> of the method of wireless communication, power, and frequency. The <<Organizing Committee, organizing committee>> must be notified of any change after registration as soon as possible. In order to avoid interference, a team must be able to select from two carrier frequencies before the match. The type of wireless communication has to follow legal regulations of the country where the competition is held. Compliance with local laws is the responsibility of the competing teams, not the RoboCup Federation.
 
-无线通信的类型也可能受到<<Local Organizing Committee, local organizing committee>>的限制。当地组委会将尽早向社区公布任何限制措施。
+The type of wireless communication may also be restricted by the <<Local Organizing Committee, local organizing committee>>. The local organizing committee will announce any restrictions to the community as early as possible.
 
-NOTE: 不允许使用蓝牙，因为它不能固定在频率通道上。
+NOTE: Bluetooth is not allowed since it cannot be fixed to frequency channels.
 
-==== 自主权
-机器人设备必须是完全自主的。在匹配过程中，不允许人工操作员向系统输入任何信息，除非在<<Overview，breaks>>或在<<Timeouts，timeout>>期间输入。忽略此规则被视为<<Unsporting Behavior，unsporting behavior>>。
+==== Autonomy
+The robotic equipment has to be fully autonomous. Human operators are not permitted to enter any information to the system during a match, except in <<Overview, breaks>> or during a <<Timeouts,timeout>>. Disregarding this rule is considered <<Unsporting Behavior, unsporting behavior>>.
