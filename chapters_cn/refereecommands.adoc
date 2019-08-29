@@ -1,97 +1,95 @@
-== Referee Commands
+== 裁判指令
 
-=== Stopping The Game
-==== Stop
-.Definition
-When the stop command is issued, all robots have to slow down to less than 1.5 m/s. Additionally, all robots have to keep at least 0.5 meters distance to the ball and are not allowed to <<Ball Manipulation, manipulate the ball>>.
+=== 停止比赛
+==== 停止
+.定义
+当发出停止指令时，所有的机器人必须减速到低于1.5m/s。此外，所有的机器人必须跟球保持至少0.5米的距离，并且不允许<<Ball Manipulation, 操纵球>>。
 
-NOTE: If the ball moves very quickly, it is hard to always keep the required distance to the ball, especially since the speed of the robots is limited during stop. Therefore, it is sufficient if it is obvious to the referee that the robots try their best to follow the distance rule.
+NOTE: 如果球运动得很快，一直跟球保持要求的距离是困难的，尤其是在停止时机器人的速度被限制的情况下。因此，如果裁判认为机器人在尽其所能地遵守这条距离规则就足够了。
 
-.Usage
-The stop command is used to pause the game after the ball crossed the <<Field Lines, field lines>> (including goals) or an offense occurred as well as to prepare the start or resumption of the game after halt, timeouts and automatic ball placement. The robot speed limit and the minimum distance to the ball allow the referee or assistant referee to place the ball safely and without interference.
+.使用
+停止指令在球越过<<Field Lines, 边线>>（包括球门）、发生犯规、准备开始比赛、终止比赛后恢复比赛、技术暂停和自动放球的情况下，用于暂停比赛。机器人的速度限制和跟球保持的最小距离允许裁判或者助理裁判没有干扰地安全地放球。
 
-==== Halt
-.Definition
-When the halt command is issued, no robot is allowed to move or <<Ball Manipulation, manipulate the ball>>.
+==== 终止
+.定义
+当发出终止指令时，所有机器人都不允许移动或者<<Ball Manipulation, 操纵球>>。
 
-There is a grace period of 2 seconds for the robots to brake.
+这里留有2秒的宽限期给机器人刹车。
 
-.Usage
-The halt command allows the referee to interrupt the game immediately whenever an emergency occurs (for example when a robot gets out of contol). It is
-also used to recalibrate the vision software during a game if the vision expert considers it necessary and the referee agrees and for <<Robot Substitution, robot substitution>>. Additionally, the referee is free to issue the halt command at will.
+.使用
+终止指令允许裁判在任何突发事件发生时（例如一个机器人失去控制），立即中断比赛。它也用于在比赛中当图像专家认为有必要和裁判同意时重新校准图像，以及<<Robot Substitution, 替换机器人>>。此外，裁判可以按意愿自由地发出终止指令。
 
-The halt command is always followed up by stop.
-
-
-=== Ball Placement
-.Definition
-After the game was stopped, the ball must be placed on the appropriate position, depending on the event that occurred.
-The automatic ball placement is the preferred way to place the ball at the designated position on the field by the robots of the teams without human interaction.
-If this is not possible, the <<Referee, referee>> places the ball manually.
-
-A ball is considered placed successfully by the robots if
-
-* no more than 30 seconds passed since the placement command
-* there is no robot within 0.05 meters distance to the ball if the next command is an <<Indirect Free Kick, indirect free kick>> or <<Direct Free Kick, direct free kick>> for the placing team
-* there is no robot within 0.5 meters distance to the ball if the next command is a <<Force Start, force start>>
-* the ball is stationary
-* the ball is at a position within 0.15 meters radius from the requested position
-
-No further commands will be issued by the <<Game Controller, game controller>> until the automatic placement is complete.
-The game will be continued by the <<Game Controller, game controller>> as soon as the ball is successfully placed, but not earlier than 2 seconds after the ball placement command has been issued.
-A failed placement will result in an indirect free kick for the opposing team.
-If this team failed to place the ball as well, the ball is placed by the <<Referee, referee>> and game continues with the original command.
-
-The non-placing team must not <<Ball Placement Interference, interfere the ball placement task>>.
-
-.Usage
-When the ball goes <<Ball In And Out Of Play, out of play>>, the following rules decide, if automatic ball placement is applied:
-
-. The <<Referee, referee>> has to place the ball for all kickoffs and all penalty kicks
-. For an <<Indirect Free Kick, indirect free kick>> or <<Direct Free Kick, direct free kick>>, the team that brings the ball <<Ball In And Out Of Play, into play>> must place the ball
-. For a <<Force Start, force start>>, a team is drawn by chance and must place the ball
-. The ball must be visible and must not be inside a field corner, a goal corner or behind the goal, before the ball placement starts
-. The <<Referee, referee>> can decide to place the ball manually at any time
-. The <<Referee, referee>> can decide to disable automatic ball placement for the rest of the game. TC/OC must agree with this decision
-. When a team has failed to place the ball 5 times in a row, it is not allowed to place the ball for the rest of the game half. All free kicks that were a result of the ball leaving the field, are awarded to the opposing team. For all other rule violations or when both teams failed to place the ball, the ball is placed by the <<Referee, referee>>
-. If no team can place the ball, the ball is placed by the <<Referee, referee>> or the <<Assistant Referee, assistant referee>>. Both the referee as well as the assistant referee are advised to use a so-called ball handler (a long, preferably black stick-like device) to move the ball.
-
-NOTE: If the ball is already at the placement position (for example after a failed free kick by the other team), the ball placement can be successful without a robot manipulating the ball. This could lead to the counter for failed attempts resetting without a contribution by the placing team.
-
-NOTE: The ball may still be moving when the placement command is issued.
-
-Ball placement is mandatory for all teams in division A.
-Teams in division B may decide, at any time before or during the game, not to place the ball for the rest of the game by talking to the <<Referee, referee>>, who in turn tells the <<Game Controller Operator, game controller operator>> to disable ball placement for this team.
-In this case, the team is allowed to bring the ball into play, after the ball was placed by the opposing team.
-If the opposing team fails to place the ball or no team can place the ball, it is placed by the <<Referee, referee>> or the <<Assistant Referee, assistant referee>>.
+终止指令经常伴随着停止指令。
 
 
-=== Resuming The Game
-After the ball has been placed, the game is resumed using one of the following commands.
+=== 放球
+.定义
+在比赛停止后，依据发生的事件，球必须被放置在合适的位置。由队伍的机器人完成的没有人工干预的自动放球是把球放在场上指定位置的优先方式。
+如果这没能完成，<<Referee, 裁判>>将人工放球。
+
+球会被认为由机器人成功放置，如果
+
+* 放球指令发出后没有超过30秒
+* 如果下一个指令是放球队伍的<<Indirect Free Kick, 间接任意球>>或者<<Direct Free Kick, 直接任意球>>，没有机器人在距离球的0.05米范围内
+* 如果下一个指令是<<Force Start, 强制开始>>，没有机器人在距离球的0.5米范围内
+* 球是静止的
+* 球在距离要求位置的0.15米范围内
+
+<<Game Controller, 比赛控制器>>不会发出更多的指令，直到自动放球完成。
+一旦球被成功放置，且在放球指令发出后不早于2秒，<<Game Controller, 比赛控制器>>会让比赛继续。
+失败的放球会导致对手的一次间接任意球。
+如果对手也放球失败，球会被<<Referee, 裁判>>放置，且比赛继续之前的指令。
+
+非放球的队伍不可以<<Ball Placement Interference, 干扰放球>>。
+
+.使用
+当出现<<Ball In And Out Of Play, 死球>>时，下列规则决定是否要进行自动放球:
+
+. 开球和点球时，<<Referee, 裁判>>必须放球
+. 对于<<Indirect Free Kick, 间接任意球>>或者<<Direct Free Kick, 直接任意球>>，<<Ball In And Out Of Play, 开球>>的队伍必须放球
+. 对于<<Force Start, 强制开始>>，随机决定放球的队伍
+. 在放球开始前，球必须可见和不在场地角落、球门角落或者球门后面
+. <<Referee, 裁判>>可以在任何时候决定手动放球
+. <<Referee, 裁判>>可以决定在比赛的剩余时间禁用自动放球。TC/OC必须同意这个决定
+. 当一个队伍连续五次放球失败，它将不被允许在比赛半场的剩余时间放球。当球出边线时对手将获得任意球。对于其他违反规则的行为或者当双方队伍都放球失败时，球会被<<Referee, 裁判>>放置
+. 如果没有队伍能够放球，球会被<<Referee, 裁判>>或者<<Assistant Referee, 助理裁判>>放置。建议裁判和助理裁判使用放球工具（一个黑色长杆的装置）来放球。
+
+NOTE: 如果球已经在应该放置的位置（例如在另一支队伍失败的任意球后），放球会在没有机器人操纵球的情况下被认为是成功的。这可能会导致在放球队伍没有真正完成一次放球的情况下，放球失败的计数被重置。
+
+NOTE: 当放球指令发出时，球可能仍在运动。
+
+放球对于A组的所有队伍是强制的。
+B组的队伍可以在比赛前或者比赛中的任何时间，通过跟<<Referee, 裁判>>沟通，决定在比赛的剩余时间不要放球，随后裁判会告诉<<Game Controller Operator, 比赛控制器的操作者>>禁用该队伍的放球。
+这种情况下，该队伍允许在对手放球后开球。
+如果对手放球失败或者没有队伍能够放球，<<Referee, 裁判>>或者<<Assistant Referee, 助理裁判>>将放球。
+
+
+=== 恢复比赛
+在放球后，比赛将通过以下指令恢复。
 
 // In division A, the ball will be placed automatically by the robots if the following command is a free kick or force start (see <<Ball Placement>>).
 
-==== Normal Start
-.Definition
-For two-staged referee commands, when normal start is sent, an attacker may <<Ball Manipulation, manipulate the ball>>. A match cannot be resumed directly via normal start.
+==== 标准开始
+.定义
+这是一个两阶段的裁判指令，当标准开始指令发出时，进攻车可以<<Ball Manipulation, 操纵球>>。比赛不能通过标准开始指令直接恢复。
 
-.Usage
-Normal start is used for <<Kick-Off, kick-offs>>, <<Penalty Kick, penalty kicks>> and <<Shoot-Out, shoot-out>>.
+.使用
+标准开始指令用于<<Kick-Off, 开球>>、<<Penalty Kick, 点球>>和<<Shoot-Out, 一对一>>.
 
-==== Kick-Off
-.Definition
-The ball has to be placed in the center of the field by the human referee.
+==== 开球
+.定义
+球必须被人类裁判放在场地中心。
 
-When the kick-off command is issued, all robots have to move to their own half of the field excluding the <<Center Circle, center circle>>. However, one robot of the attacking team is also allowed to be inside the whole center circle. This robot will be referred to as the kicker. No robot is allowed to touch the ball.
+当发出开球指令时，所有的机器人必须移动到自己的半场，且不在<<Center Circle, 中场圆圈>>内。然而，进攻方的一个机器人会被允许进入整个中场圆圈。这个机器人会被认为是开球车。其他机器人不允许碰球。
 
-When the <<Normal Start, normal start>> command is issued, the kicker is allowed to shoot the ball. A goal may be scored directly from the kick-off.
+当<<Normal Start, 标准开球>>指令发出时，开球车被允许踢球。可以直接通过开球进球。
 
-When the ball is <<Ball In And Out Of Play, in play>>, the kicker may not touch the ball until it has been touched by another robot or the game has been stopped (see <<Double Touch, double touch>>). Also, the restrictions regarding the robot positions are lifted.
+当球处于<<Ball In And Out Of Play, 活球>>状态时，开球车不能碰球直到它被别的机器人碰到或者比赛被停止（参见<<二次触球, 二次触球>>)。同时，机器人位置的限制被解除。
 
-.Usage
-Both half times as well as both overtime periods (if needed) start with a kick-off. Chapter <<Match Preparation>> describes how to determine the attacking team.
+.使用
+半场和加时赛（若有）通过开球开始。<<比赛准备, 比赛准备>>这一章描述了如何确定进攻方。
 
-Additionally, after a goal has been scored, the receiving team restarts the game with a kick-off.
+另外，在一方进球后，另一方通过开球重新开始比赛。
 
 ==== Direct Free Kick
 .Definition
