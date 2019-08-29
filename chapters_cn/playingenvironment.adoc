@@ -1,80 +1,130 @@
-== Playing Environment
+== 比赛环境
 
-=== Field Setup
-==== Dimensions
+=== 场地设置
+==== 尺寸
 The field of play must be rectangular and of the following size:
 
+比赛场地必须为矩形，其具体尺寸如下：
+
 * Division A: 13.4 meters times 10.4 meters with a playing area of 12 meters times 9 meters
+
+* A级比赛：13.4米*10.4米的场地，包含12米*9米的比赛区域。
+
 * Division B: 10.4 meters times 7.4 meters with a playing area of 9 meters times 6 meters
+
+* B级比赛：10.4米*7.4米的场地，包含9米*6米的比赛区域。
 
 The exact field dimensions and the field markings at the venue may vary by up to ±10% in each linear dimension.
 
+
+在实际赛事中，场地尺寸及场上标志物的尺寸在各个线性维度上被允许有最大±10%的误差。
+
 The two figures below show the dimensions of the field, the goals and special field areas, measured in millimeters.  <<field-dimensions-a, Figure 1>> shows the dimensions for division A and  <<field-dimensions-b, figure 2>> for division B.
+
+以下两张图片展示了比赛场地、球门及特殊区域的尺寸，以毫米为单位。<<field-dimensions-a, Figure 1>>是A级比赛的尺寸，<<field-dimensions-a, Figure 2>>是B级比赛的尺寸
 
 NOTE: The numbers in the figures below show the distances in millimeters.
 
+NOTE: 下图中的数字均以毫米为单位
 [[field-dimensions-a]]
-.Field dimensions and markings for division A
+.A级比赛场地及标志尺寸
 image::quad-size-field.png[]
 
 [[field-dimensions-b]]
-.Field dimensions and markings for division B
+.B级比赛场地及标志尺寸
 image::double-size-field.png[]
 
 ==== Field Surface
+==== 场地表面
 The playing surface is green felt mat or carpet. The floor under the carpet is level, flat, and hard.
+
+比赛场地表面应以绿色毡垫或者地毯覆盖，下方的地板要求是水平、平坦、坚硬的。
 
 The field surface will continue for 0.7 meters beyond the <<Field Lines, field lines>> on all sides. The outer 0.4 meters of this runoff area, separated from the robot area by a 0.1 meters tall wall, is used as a designated walking area for the <<Referee, referee>> and the <<Assistant Referee, assistant referee>>.
 
+场地表面应超出各条 <<场地边界线, 边界线>>0.7m。其中最外侧的0.4m将被0.1m高的隔离板分开，作为<<裁判, 裁判>>及<<助理裁判, 助理裁判>>的活动区域。
 
 ==== Field Markings
+==== 场地标识
 The field of play is marked with lines. All lines are 0.01 meters wide and white (paint, spray, white carpet or strong tape). Lines belong to the areas of which they are boundaries.
 
+比赛场地应以0.01m宽的白线进行标记（白线可以是刷漆、喷涂、白色地毯或胶带的形式）。这些白线标志了各个区域的边界。
+
 ===== Field Lines
+===== 场地边界线
 The playing area is defined by four field lines. The two longer field lines are called touch lines. The two shorter field lines are called goal lines.
+比赛区域由四条边线确定，其中较长的两条称为边线，较短的两条称为底线
 
 ===== Additional Lines
+===== 其他场地线
 The field of play is divided into two halves by a halfway line that runs along the width of the field and through the center of the field. The halfway line is parallel to the goal lines.
+
+比赛区域被场地半场线分为两个半场。半场线应沿球场横向穿过场地中心并与底线平行。
 
 A mid-line runs along the length of the field, passing through the center of the field. The mid-line is parallel to the touch lines. This line is used to provide adequate features for the geometry calibration of the <<Vision, vision software>>.
 
+此外，沿纵向穿过球场中心并与边线平行的称为中线。中线被用来给<<Vision, vision software>>的几何校准提供足够的特征。
+
 ===== Center Circle
+===== 中圈
 The center mark is indicated at the midpoint of the halfway line. A circle with a diameter of 1 meter is marked around it for both divisions.
+场地中心点被标记在半场线的中点处。中圈是围绕中心点的直径1m的圆。
 
 ===== Defense Area
+===== 禁区
 A defense area is defined as a rectangle touching the goal lines centrally in front of both <<Goals, goals>>. The size of the defense area is 2.4 meters times 1.2 meters for division A and 2 meters times 1 meter for division B, as shown in figures <<field-dimensions-a, 1>> and <<field-dimensions-b, 2>> respectively.
 
+禁区是置于球门前、与底线相接并位于底线中央的矩形区域。A级比赛的禁区尺寸为2.4m*1.2m，B级比赛的禁区尺寸为2m*1m，分别如下图 <<field-dimensions-a, 1>> 和 <<field-dimensions-b, 2>> 所示。
 
 ===== Penalty Mark
+===== 罚球点
 For each field half the penalty mark is 1.2 meters for division A and 1 meter for division B, from the midpoint between the goalposts and equidistant to them, thus coinciding with the outer edge of the defense area.
+在两个半场均有一罚球点，其与两门柱连线中点相距1.2m（A级）/2.4m（B级），且到两门柱的距离相等，即与禁区边线重合。
 
 NOTE: The penaly mark does not need to be painted since it coincides with the intersection of the defense area and the mid-line.
 
+NOTE: 罚球点不需要额外粉刷，因为其与禁区边线及中线的交点重合。
+
 ==== Goals
+==== 球门
 Goals must be placed on the center of each goal line and anchored securely to the field surface. They consist of two 0.16 meters high vertical side walls joined at the back by a 0.16 meters high vertical rear wall. The inner face of the goal has to be covered with an energy absorbing material such as foam to help absorb ball impacts and lessen the speed of deflections. The goal walls, edges, and tops are white in color.
+
+球门应被分别放置在两条底线的中央位置且安全固定在球场表皮上。其由两个0.16m高的垂直侧壁连接一个0.16m高的垂直后壁组成。球门的内表面应该覆盖如泡沫等能吸收能量的材料，用以吸收球的冲击力和降低偏转速度。球门的墙面、边缘及顶部都应为白色。
 
 The distance between the side walls is 1.2 meters for division A and 1 meter for division B, and the goal is 0.18 meters deep. The goal walls are 0.02 meters thick and touch the goal line, but do not overlap or encroach on the field lines or the field. <<goal-detail-a, Figure 3>> and <<goal-detail-b, figure 4>> show these details for division A and division B respectively.
 
+球门侧壁间的距离应为1.2m（A级比赛）、1m（B级比赛），球门深度为0.18m，球门墙壁的厚度为0.02m。球门应与底线相接，但不能与球场边界线重叠或侵占球场区域。<<goal-detail-a, Figure 3>> 和 <<goal-detail-b, figure 4>> 分别展示了A级比赛和B级比赛的球门部分细节。
+
 NOTE: The numbers in the figures below show the distances in millimeters.
 
+NOTE: 下图中的数字均以毫米为单位
 [[goal-detail-a]]
-.The goal in detail for division A
+.A级比赛的球门细节
 image::goal_detail_divisionA.png[width=400]
 
 [[goal-detail-b]]
-.The goal in detail for division B
+.B级比赛的球门细节
 image::goal_detail_divisionB.png[width=400]
 
 === Ball
+=== 比赛用球
 The ball is a standard orange golf ball. It weights approximately 0.046 kilograms and its diameter measures 0.043 meters.
+比赛用球为标准的橙色高尔夫球。其重量约为0.046kg，直径约为0.043m
 
 For official matches, the <<Organizing Committee, organizing committee>> provides the ball.
+在官方比赛中，由<<Organizing Committee, organizing committee>>提供比赛用球。
 
 === Shared Software
+=== 共享软件
 The shared software used in the Small Size League is maintained by the <<Technical Committee, technical committee>>, though everyone is encouraged to contribute. The <<Technical Committee, technical committee>> members however guarantee that any changes made less than three months before the next RoboCup do not break compatibility.
+小型组比赛中的共享软件主要由<<Technical Committee, technical committee>>来进行维护，同时也鼓励所有人贡献代码。<<Technical Committee, technical committee>>成员需要保障在下届机器人世界杯前三个月内的任何更改不会破坏软件的兼容性。
 
 ==== Vision
+==== 视觉系统
+
 Each field is provided with a shared central vision server and a set of shared cameras. This shared vision equipment uses the community-maintained SSL-Vision software (https://github.com/RoboCup-SSL/ssl-vision) to provide localization data to teams via Ethernet in a packet format that is to be announced by the shared vision system developers before the competition. Teams need to ensure that their systems are compatible with the shared vision system output and that their systems are able to handle the typical properties of real-world sensory data as provided by the shared vision system (including noise, latency, or occasional failed detections and misclassifications). The vision patterns on the top of the robots must adhere to the specifications of SSL-Vision, and must be of the standard color paper as specified in the SSL-Vision documentation.
+
+每个比赛场地将会提供一个共享的中央视觉服务器及一组共享摄像头。这一共享视觉设备使用社区维护的SSL-Vision软件(https://github.com/RoboCup-SSL/ssl-vision)
 
 Besides the shared vision equipment, teams are not allowed to mount their own cameras or other external sensors, unless specifically announced or permitted by the respective competition organizers.
 
