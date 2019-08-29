@@ -1,112 +1,105 @@
-== Offenses
-Offenses are divided into multiple categories according to the seriousness of the offense: <<Minor Offenses, minor offenses>>, <<Fouls, fouls>> and <<Unsporting Behavior, unsporting behavior>>.
+== 违规行为
+根据犯规的严重程度，犯规被分为以下几种：<<违例, 违例>>、<<犯规, 犯规>>和<<违反体育精神的行为,违反体育精神的行为>>。
 
-NOTE: Rule of thumb: Minor offenses are infringements of the rules committed by an attacking robot while the ball is <<Ball In And Out Of Play, in play>>. Fouls are infringements of the rules committed by a defender or while the ball is <<Ball In And Out Of Play, out of play>> or infringements that may harm the humans, the robots or the field.
+NOTE: 违例一般是指比赛进行时进攻机器人的违规行为，犯规一般是指防守机器人的违规行为、比赛中断时的违规行为以及对人、机器人或场地造成损害的违规行为。
 
-=== Minor Offenses
-Minor offenses are violations of the rules that result in a stoppage and a subsequent <<Indirect Free Kick, indirect free kick>> for the opposing team. The free kick will be shot from the position where the offense began happening (see <<Direct Free Kick, the direct free kick rules>> for the exact ball position rules).
+=== 违例
+比赛中，一方发生违例行为后，比赛中断，并在违例发生的地方判给对方一粒<<间接任意球, 间接任意球>>（具体开球位置参见<<直接任意球, 直接任意球>>）。所有违例行为如下：
 
-All minor offenses are listed below.
+==== 无意义射门 [small]#(_B组_)#
+满足以下全部条件的行为会被视为无意义射门：
 
-==== Aimless Kick [small]#(_division B only_)#
-A kick is aimless when after the ball touched a robot, it subsequently crossed the midline and then its opponent's goal line outside the goal without touching another robot. A kick-off kick cannot be aimless, as the ball is located at the midline and does therefore not cross it.
+* 球越过中线；
+* 球在对方底线出界；
+* 对方机器人未触球。
 
-==== Lack Of Progress
-There is a lack of progress if only one team is allowed to <<Ball Manipulation, manipulate the ball>> (<<Kick-Off, kick-off>>, <<Direct Free Kick, direct free kick>>, <<Indirect Free Kick, indirect free kick>>, <<Penalty Kick, penalty kick>>) and does not bring the ball <<Ball In And Out Of Play, into play>> in time. The time limit is 5 seconds for <<Indirect Free Kick, indirect free kicks>> and <<Direct Free Kick, direct free kicks>> in division A and 10 seconds in all other cases.
+开球不会被视为无意义射门，因为开球位置在中线上，所以球不会越过中线。
 
-There is also a lack of progress if the ball is inside a team's <<Defense Area, defense area>> for 10 seconds, since the keeper is the only robot that is allowed to <<Ball Manipulation, manipulate the ball>>.
+==== 超时
+以下行为会被视为超时：
 
-NOTE: If both teams are allowed to manipulate the ball, and thus no team is at fault, the referee may stop the game and issue a <<Force Start, force start>> command.
+* 未在5秒内开出<<直接任意球, 直接任意球>>或<<间接任意球, 间接任意球>>的（B组为10秒）；
+* 未在10秒内完成<<开球, 开球>>或<<点球, 点球>>的；
+* 守门员未在10秒内将球清出己方禁区的。
 
-NOTE: If both teams are clearly unable to bring the ball <<Ball In And Out Of Play, into play>> without violating the rules, the referee may issue a <<Force Start, force start>> command instead of an <<Indirect Free Kick, indirect free kick>> for the other team.
+NOTE: 如果比赛双方均可控球，则两队均未违例，裁判可以停止比赛并发出<<强制开始, 强制开始>>的指令。
 
-==== Double Touch
-When the ball is brought <<Ball In And Out Of Play, into play>> following a <<Kick-Off, kick-off>>, <<Direct Free Kick, direct free kick>>, <<Indirect Free Kick, indirect free kick>> or <<Penalty Kick, penalty kick>>, the kicker is not allowed to touch the ball until it has been touched by another robot or the game has been stopped.
+NOTE: 如果比赛双方都无法在不违规的情况下使比赛开始，裁判可以用<<强制开始, 强制开始>>指令代替另一方的<<间接任意球, 间接任意球>>指令。
 
-The ball must have moved at least 0.05 meters to be considered as <<Ball In And Out Of Play, in play>>.
+==== 二次触球
+开球机器人完成<<开球, 开球>>、<<直接任意球, 直接任意球>>、<<间接任意球, 间接任意球>>或<<点球, 点球>>使比赛开始后，在对方机器人触碰球之前再次触碰球的行为被视为二次触球。
 
-NOTE: It is understood that the ball may be bumped by the robot multiple times over a short distance while the kick is being taken. This is why a distance of 0.05 meters is used to decide whether a robot violates this rule or not. Remaining in contact with the ball for more than 0.05 meters also counts as double touch, even though technically the robot only touched the ball once.
+球在移动超过0.05米之后被视为比赛开始。
 
-==== Attacker In Defense Area
-A robot must not touch the ball while being partially or fully inside the opponent <<Defense Area, defense area>>.
+NOTE: 机器人踢球时，难免会与球发生多次碰撞，这也是用0.05米的距离来确定机器人是否犯规的原因。即使球与机器人只发生过一次接触，开球时持球移动超过0.05米也被视为二次触球。
 
-NOTE: When the ball is <<Ball In And Out Of Play, out of play>>, the more strict rule <<Robot Too Close To Opponent Defense Area>> applies instead.
+==== 对方禁区内触球
+当机器人位于或部分位于对方的<<禁区, 禁区>>时不允许触球。
 
-==== Excessive Dribbling
-A robot must not <<Dribbling Device, dribble>> the ball further than 1 meter, measured linearly from the ball location where the dribbling started. A robot begins dribbling when it makes contact with the ball and stops dribbling when there is an observable separation between the ball and the robot.
+NOTE: 当<<比赛中断, 比赛中断>>时，需要遵守更严格的规则：<<机器人到对方禁区距离过短,机器人到对方禁区距离过短>>。
 
-NOTE: Dribblers can still be used to dribble large distances with the ball as long as the robot periodically loses possession, such as kicking the ball ahead of it as human soccer players often do.
+==== 带球过度
+机器人从触球的位置算起，<<带球, 带球>>距离不能超过一米。机器人与球接触被视为带球开始，机器人与球之间存在可见分离被视为带球结束。
 
-==== Ball Speed
-A robot must not accelerate the ball faster than 6.5 meters per second in 3D space.
+NOTE: 像人类足球运动员前踢带球那样，只要机器人可以周期性的失去对球的控制，那么机器人带球是符合规则的。
 
-=== Fouls
-Fouls are violations of the rules that result in a <<Direct Free Kick, direct free kick>> for the opposing team. The free kick will be shot from the position where the offense began happening (see <<Direct Free Kick, the direct free kick rules>> for the exact ball position rules). If the foul happened while the ball is <<Ball In And Out Of Play, out of play>>, no free kick is given.
+==== 球速过快
+在三维空间内，机器人不能使球速超过6.5米/秒。
 
-Every third foul of the same team results in a <<Yellow Card, yellow card>>.
+=== 犯规
+比赛中，一方发生犯规行为后，比赛中断，并在犯规发生的地方判给对方一粒<<直接任意球, 直接任意球>>（具体开球位置参见<<直接任意球, 直接任意球>>）。当犯规发生在比赛中断的情况下，不会判罚任意球。
 
-In case of severe fouls, the referee can also issue a <<Yellow Card, yellow card>> or a <<Red Card, red card>>.
+同一支队伍每三次犯规将被判一张黄牌。裁判也可以根据犯规的严重程度判罚<<黄牌, 黄牌>>或<<红牌, 红牌>>。
 
-All fouls are listed below.
+所有犯规行为如下：
 
-==== Attacker Touches Robot In Opponent Defense Area
-When the ball <<Ball In And Out Of Play, in play>>, a robot must not touch any opponent robot inside the opponent <<Defense Area, defense area>>.
+==== 机器人在对方禁区触碰对方机器人
+当比赛进行时，机器人不能触碰对方禁区内对方的任何机器人。
 
-NOTE: When the ball is <<Ball In And Out Of Play, out of play>>, the rule <<Robot Too Close To Opponent Defense Area>> applies instead.
+==== 机器人到对方禁区距离过短
 
-==== Robot Too Close To Opponent Defense Area
-During <<Stop, stop>>, <<Direct Free Kick, direct free kicks>> and <<Indirect Free Kick, indirect free kicks>>, before the ball <<Resuming The Game, has entered play>>, all robots have to keep at least 0.2 meters distance to the opponent <<Defense Area, defense area>>.
+在比赛处于<<停止, 停止>>、<<直接任意球, 直接任意球>>或<<间接任意球, 间接任意球>>的状态时，所有机器人必须与对方<<禁区, 禁区>>保持至少0.2米的距离。对于已经处在<<禁区, 禁区>>内的机器人，需要在2秒内离开。
 
-There is a grace period of 2 seconds for the robots to move away from the opponent defense area.
+==== 干扰放球
+在比赛处于<<Ball Placement, ball placement>>状态时，非放置队伍的所有机器人必须与球与放置位置之间的连线保持至少0.5米的距离（该区域形状类似于体育场），对于已经处在该区域内的机器人，需要在2秒内离开，否则记一次犯规并重新开始放球。
 
-==== Ball Placement Interference
-During <<Ball Placement, ball placement>>, all robots of the non-placing team have to keep at least 0.5 meters distance to the line between the ball and the placement position (the forbidden area forms a stadium shape).
+NOTE: 规则中没有包含所有的干扰放球的行为，所以在非放置队伍有明显的干扰放球行为时，裁判可以记该队一次犯规。
 
-If a robot of the non-placing team is too close to the line between the ball and the placement position for more than 2 seconds, it commits a foul.
-In this case, the placement procedure is restarted.
+==== 碰撞
+当两个不同队伍的机器人发生碰撞时，记录两个机器人速度矢量在二者连线投影上的差值，如果差值大于1.5米/秒，速度较大的机器人所在队伍记一次犯规，如果差异小于0.3米/秒，则双方各记一次犯规，但比赛不中断。
 
-NOTE: This rule does not cover all cases of ball placement interference. The <<Referee, referee>> is encouraged to call fouls if the non-placing team is obviously interfering with the ball placement.
+==== 推挤
+当双方机器人都与球接触或者彼此接触时，机器人施力使对方机器人在自己朝向移动，这种行为被视为推挤。
 
-==== Crashing
-At the moment of collision of two robots of different teams, the difference of the speed vectors of both robots is taken and projected onto the line that is defined by the position of both robots. If the length of this projection is greater than 1.5 meters per second, the faster robot committed a foul. If the absolute robot speed difference is less than 0.3 meters per second, both conduct a foul but the game will not be stopped.
+NOTE: 当双方机器人都用近似的力推挤对方机器人时，双方都不犯规。
 
-==== Pushing
-A robot pushes an opponent robot if both robots keep contact to the ball or to each other while the robot exerts force onto the opponent robot, such that both robots travel towards the opponent robot.
+==== 控球
+机器人不能将球包裹以至于对方机器人无法拿到球。
 
-NOTE: If both robots are pushing each other with similar force, no team is at fault.
+==== 翻倒或掉落零件
+机器人不得翻倒，爆炸或在场地上掉落对其他机器人有潜在威胁的零件。犯规机器人必须被<<替补, 替换>>。
 
-==== Ball Holding
-Robots must not surround the ball to prevent access by others.
+NOTE: 金属部件（例如螺钉）以及较大的部件通常构成潜在的威胁，非常小的非金属部件（例如橡胶圈）不会构成威胁。
 
-==== Tipping Over Or Dropping Parts
-A robot must not tip over, break or drop parts on the field that pose a potential threat to other robots.
+==== 停止状态机器人速度
+在停止的状态下机器人车速不能超过1.5米/秒，对于已超速的，需要在2秒内减速。同样的犯规每机器人每状态只记一次。
 
-A robot violating this rule has to be <<Robot Substitution, substituted>>.
+NOTE: 该规则不适用于<<放球, 放球>>状态。
 
-NOTE: Metal parts (screws for example) as well as larger parts generally pose a potential threat, very small non-metal parts (for example rubber subwheel rings) don't.
+NOTE: 由于停止命令是用于手动放球和机器人<<替补,替换>>的，限制机器人速度是为了避免机器人伤到场上人员。
 
-==== Robot Stop Speed
-A robot must not move faster than 1.5 meters per second during <<Stop, stop>>. A violation of this rule is only counted once per robot and stoppage.
+==== 机器人离球过近
+在对方进行<<开球, 开球>>、<<直接任意球, 直接任意球>>或<<间接任意球, 间接任意球>>时，机器人必须与球保持至少0.5米的距离。犯规后，比赛指令保持与犯规前一致。
 
-There is a grace period of 2 seconds for the robots to slow down.
+NOTE: 在<<停止, 停止>>状态下，不会自动判定机器人与球的距离，但裁判可以对不遵守要求距离的队伍一张黄牌。详细参见<<停止, 停止状态>>。
 
-NOTE: This rule does not apply to <<Ball Placement, ball placement>>.
+==== 非守门员禁区触球
 
-NOTE: Since the stop command is used for manual ball placement and <<Robot Substitution, robot substitution>>, the intention of the robot speed limit is to avoid robots harming the people on the field.
+NOTE: <<犯规, 犯规>>内的判罚不适用于该规则。
 
-==== Defender Too Close To Ball
-A robot's distance to the ball must be at least 0.5 meters during an opponent <<Kick-Off, kick-off>>, <<Direct Free Kick, direct free kick>> or <<Indirect Free Kick, indirect free kick>>.
-The game is resumed with the same command that was issued before the foul.
+如果非守门员机器人在部分进入己方禁区的情况下触球，比赛停止，记一张黄牌，判给对方一粒<<直接任意球, 直接任意球>>，犯规次数不增加。
 
-NOTE: During <<Stop, stop>>, there is no automatic sanction for being too close to the ball. The referee may still punish a team for <<Unsporting Behavior,unsporting behavior>> by issuing a <<Yellow Card, yellow card>> if it does not respect the required distance. See <<Stop, stop>> for further explanation.
-
-==== Multiple Defenders
-NOTE: This rule does not use the standard sanctions defined for <<Fouls, fouls>>.
-
-If a robot other than the keeper touches the ball while being partially inside its own defense area, the game is stopped, the robot receives a <<Yellow Card, yellow card>> and the opponent team resumes the game with a <<Direct Free Kick, direct free kick>>. The foul counter is not increased.
-
-If a robot other than the keeper touches the ball while being entirely inside its own defense area, the game is stopped and a <<Penalty Kick, penalty kick>> is awarded to the other team. The foul counter is not increased.
-
+如果非守门员机器人在完全进入己方禁区的情况下触球，比赛停止，判给对方一粒<<点球, 点球>>，犯规次数不增加。
 
 === Unsporting Behavior
 Unsporting behavior can lead to <<Yellow Card, yellow cards>>, <<Red Card, red cards>>, <<Penalty Kick, penalty kicks>>, a <<Forced Forfeit, forced forfeit>> or a <<Disqualification, disqualification>>. The human <<Referee, referee>> chooses an appropriate sanction, depending on the severity of the offense.
