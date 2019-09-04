@@ -1,33 +1,33 @@
-== Shoot-Out
-.Definition
-Both teams alternately attempt to score a goal until each team has performed 5 attempts. If both teams have the same score after those 5 attempts, each team takes another attempt in the same order as before until the score of the two teams is different.
+== 点球决胜
+.定义
+两队依次执行5次尝试。若在5次之后两队的进球数相等，那么两队继续按照一样的顺序依次执行，直到两队的进球数不相等。
 
-Only one attacking robot and one keeper is allowed per team. During a shoot-out attempt, the attacking robot and the opponent keeper are the only ones allowed to move and <<Ball Manipulation, manipulate the ball>>. Other robots are not allowed to interfere.
+每个队伍只允许使用一个进攻机器人和一个守门员。在一次点球的尝试中，只有进攻机器人和对方的守门员允许移动和<<操纵球, 操纵球>>，其他的机器人不得干预。
 
-The procedure of a shoot-out attempt is as follows:
+一次点球尝试将按以下顺序执行：
 
-. The ball is placed by the human referee on the <<Additional Lines, mid-line>> (not halfway line), 8 meters (division A) or 6 meters (division B) away from the opponent goal.
-. When the <<Penalty Kick, penalty>> command is issued, the defending keeper has to move to the goal line and keep touching it.
-. When the <<Normal Start, normal start>> command is issued, the attacker is allowed to <<Ball Manipulation, manipulate the ball>>. The ball has to only move towards the opponent goal, as measured by its x coordinate in the coordinate system of <<Vision, SSL-Vision>>.
-. When the ball is <<Ball In And Out Of Play, in play>>, the defending keeper may move freely again, analogous to a <<Penalty Kick, penalty kick>>.
+. 球由裁判放置在<<其他场地线, 纵向中线>>上，A组放置在离对方球门8米远的位置，B组则是6米。
+. 当<<点球, 点球>>指令下达后，防守方守门员必须移动至球门线上并保持接触。
+. 当<<标准开始, 标准开始>>指令下达后，进攻方允许触球。球在<<Vision, SSL-Vision>>系统中的 x 轴方向上只能向对方球门的方向移动。
+. 与<<罚球, 罚球>>不同，当处于<<Ball In And Out Of Play, 活球>>状态时，防守方守门员可以自由移动。
 
-A goal is awarded if:
+以下情形将被认为是进球：
 
-* the ball touches the inner surface of a goal wall or the ground of the goal of the defending team in less than 10 seconds, starting from when the <<Normal Start, normal start>> command is issued
-* the defending team violates any rule
+* 在<<标准开始, 标准开始>>指令给出后 10 秒内，球触碰到防守方球门内壁或球门内的地面。
+* 防守方犯规。
 
-A goal is not awarded if:
+以下情形将不被认为是进球：
 
-* the ball crosses any <<Field Lines, field lines>> outside the goal
-* the defending keeper touches the ball such that the ball speed vector changes direction by at least 90 degrees in 2D space
-* the attacking team violates any rule
+* 球穿过球门线以外的<<场地边界线, 边界线>>。
+* 防守方守门员碰到球之后，球速方向在二维平面上至少改变了 90 度。
+* 进攻方犯规。
 
-NOTE: The restrictions defined for <<Scoring Goals, scoring goals>> do not apply here. This explicitly includes the ball height limit of 0.15 meters. Other rules like the <<Excessive Dribbling, excessive dribbling>> limitation for example do.
+NOTE: 在常规时间中的<<进球, 进球>>限制在点球决胜中将不被使用，包括 0.15 米的球高度限制，但其他的规则如不能<<带球过度, 带球过度>>将仍然被使用。
 
-Robots may be <<Robot Substitution, substituted>> between shoot-out attempts. The new robot may be put in right away.
+在点球的尝试之间可以进行<<机器人替换, 机器人的替换>>，新的机器人可以被立刻放入场内。
 
-NOTE: Note that <<Timeouts, timeouts>> are not allowed during shoot-out.
+NOTE: 点球决胜的过程中没有<<暂停, 暂停>>。
 
-.Usage
-Shoot-Out is used to determine the winner of an elimination match if both teams scored the same amount of goals in previous <<Game Stages, game stages>>.
+.使用
+在<<比赛阶段, 比赛阶段>>中两队进球数相等时，为举出胜负时使用。
 

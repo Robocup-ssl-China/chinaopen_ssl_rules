@@ -1,24 +1,24 @@
-== Robot Substitution
-.Definition
-Robots are substituted by the <<Robot Handler, robot handler>> of the respective team. No other team member is allowed to take robots out or put robots in.
+== 机器人替换
+.定义
+机器人的替换由相应队伍的<<Robot Handler, robot handler>>执行，其他人员禁止从场中取机器人或将机器人放入场内。
 
-. A <<Robot Handler, robot handler>> who's team is marked for robot substitution performs at least one of the following operations in the given order.
-.. Put robots in. The maximum allowed number of robots of the team on the field must not be exceeded.
-.. Take robots out. If a robot that is taken out is closer than 1 meter to the intersection of the halfway line with one of the touch lines, another robot can be put in right away. Otherwise the robot handler has to wait until the next substitution opportunity.
-. If one of the robots taken out is the keeper, the <<Robot Handler, robot handler>> tells the <<Game Controller Operator, game controller operator>> the id of the robot that takes over the keeper role.
-. The <<Robot Handler, robot handler>> informs the <<Referee, referee>> when done.
-. When both teams finished the robot substitution, the <<Referee, referee>> informs the <<Game Controller Operator, game controller operator>>.
-. The <<Game Controller Operator, game controller operator>> performs a <<Stop, stop>> followed by continuing the game.
+. 发出机器人替换请求的队伍的<<Robot Handler, robot handler>>至少按照指定的顺序执行下列一项操作：
+.. 将机器人放入场内。场上机器人的数量不得超过队伍此刻所被允许的最大数量。
+.. 将机器人从场上取出。如果取出的机器人离边线和中线的交点不超过 1 米，另一个机器人可以立刻被放入。否则<<Robot Handler, robot handler>>必须等待下一个可以进行机器人替换的机会。
+. 如果被取出的机器人是守门员，<<Robot Handler, robot handler>>需要告知<<Game Controller Operator, game controller operator>>新放入的机器人的号码。
+. 操作完成时<<Robot Handler, robot handler>>需要通知<<Referee, referee>>。
+. 当两个队伍都完成机器人替换后，<<Referee, referee>>通知<<Game Controller Operator, game controller operator>>。
+. <<Game Controller Operator, game controller operator>>给出<<停止, 停止>>指令继续比赛。
 
-.Usage
-Robots can be substituted for any reason. There is no limit on the number of substitutions.
+.使用
+对机器人替换的原因和次数都不作限制。
 
-A robot substitution intent can be made by:
+机器人替换的请求可以通过以下方式做出：
 
-. A <<Robot Handler, robot handler>> by informing the <<Game Controller Operator, game controller operator>> who in turn enters the intent into the <<Game Controller, game controller>>.
-. A team software by sending a request to the <<Game Controller, game controller>>.
-. The <<Game Controller, game controller>> itself if a team exceeds the maximum number of robots (for example after a team receives a <<Yellow Card, yellow>> or <<Red Card, red card>>).
+. 机器人<<Robot Handler, robot handler>>通知<<Game Controller Operator, game controller operator>>，<<Game Controller Operator, game controller operator>>对<<Game Controller, game controller>>进行操作发出请求。
+. 队伍的软件向<<Game Controller, game controller>>发出请求。
+. 当队伍收到<<黄牌, 黄牌>>或<<红牌, 红牌>>时，<<Game Controller, game controller>>会对场上的机器人数量进行检查，当超过被允许的数量时，会自动发出请求。
 
-If the game was halted due to a substitution intent by a team, at least one substitution (taking a robot out or putting one in) must be performed by this team. A substitution intent can be revoked unless the game was not already halted for substitution.
+当比赛因为某个队伍发出的机器人替换请求进入<<停止, 停止>>状态时，该队必须执行至少一次机器人替换操作。机器人替换请求仅当比赛还没有进入<<停止, 停止>>状态时才可以被取消。
 
-If a robot substitution intent for either team is present just before the game would continue after ball placement, the <<Game Controller, game controller>> automatically <<Halt, halts>> the game.
+如果机器人替换的请求在<<放球, 放球>>之后，比赛正式开始之前，<<Game Controller, game controller>>将自动使比赛 <<停止, 停止>>。
