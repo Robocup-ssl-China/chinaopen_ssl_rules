@@ -1,11 +1,11 @@
-== Scoring Goals
-A goal is scored if the ball enters the goal between the goal posts, provided that no rule infringement has been committed in the play immediately preceeding this event, by the team scoring the goal.
+== 进球
+当球在两球门柱之间进入球门，若该事件之前的比赛中，该队伍没有犯规，则判定进球。
 
-Additionally, the goal is only valid if
+附加条件：当满足以下条件时视为进球有效
 
-* It is not shot directly from an <<Indirect Free Kick, indirect free kick>>
-* The height of the ball did not exceed 0.15 meters after the last touch of an attacker
+* 当球不是从<<Indirect Free Kick, 非直接任意球>>开球直接射入。
+* 在上一次进攻者碰球之后，球的高度未超过0.15m
 
-NOTE: During <<Shoot-Out, shoot-out>>, these additional rules do not apply.
+NOTE: 在<<点球决胜, 点球决胜>>中，不考虑附加条件。
 
-If the goal is considered invalid, the game will be continued as if the ball crossed the goal line outside the goal.
+如果进球被视为无效，比赛将被认为球穿过底线出界。

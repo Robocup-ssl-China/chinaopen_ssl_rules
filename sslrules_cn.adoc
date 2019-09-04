@@ -1,7 +1,8 @@
 :imagesdir: images/
 
-= Rules of the RoboCup Small Size League 2019
+= RoboCup小型组2019年规则
 {docdate}
+翻译：ZJUNlict
 :toc:
 
 // add icons from fontawesome in a up-to-date version

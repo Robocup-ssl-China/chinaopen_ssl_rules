@@ -1,37 +1,38 @@
-== Ball Leaves The Field
-When the ball leaves the field by fully crossing the <<Field Lines, field line>>, the game will be stopped, the ball will be placed and the game will be restarted depending on the position of the field line crossing as well as on the team that last touched the ball.
+== 球出界
+当球以完全穿过<<Field Lines, 场地边线>>的方式出界，比赛将会停止并且在球重新放置后继续比赛。球的放置位置以及继续比赛的方式由上一次碰球的队伍以及出界的位置决定。
 
-=== Touch Line Crossing
-Touch lines are the long <<Field Lines, field lines>> at both sides of the playing field.
+=== 边线出界
+当球穿过两侧的<<Field Lines, 场地边线>>导致的出界。
 
-==== Throw-In
-.Definition
-The ball has to be placed 0.2 meters perpendicular to the touch line where the ball crossed the touch line. Its distance to the goal lines must be at least 0.2 meters.
+==== 放置边线球
+.定义
+球应放置于出界位置内与边线的正交距离为0.2m的位置，位置与底线的距离至少为0.2m。
 
-After the ball has been placed, an <<Indirect Free Kick, indirect free kick>> is awarded to the opponent of the team that last touched the ball before it left the field.
+球在放置后，应奖励给出界前上次碰球的对手一个<<Indirect Free Kick,非直接任意球>> 。
 
-.Usage
-A throw-in is used to restart the game after the ball left the field by crossing the touch line.
+.使用
+放置边线球在球边线出界后继续比赛时使用。
 
-=== Goal Line Crossing
-Goal lines are the short <<Field Lines, field lines>> at both ends of the playing field.
+=== 底线出界
+当球穿过球场两底侧的<<Field Lines, 场地边线>>
+导致的出界。
 
-==== Goal Kick
-.Definition
-The ball has to be placed 0.2 meters from the closest touch line and 1 meter from the goal line.
+==== 球门球
+.定义
+球应放置在距离出界最近的边线距离0.2m，距离底线1m的位置。
 
-After the ball has been placed, a <<Direct Free Kick, direct free kick>> is awarded to the opponent of the team that last touched the ball before it left the field.
+球在放置后，应奖励给出界前上次碰球的对手一个<<Direct Free Kick, 直接任意球>> 。
 
-.Usage
-A goal kick is used to restart the game after the ball left the field by crossing the goal line of the team that did not touch the ball last.
+.使用
+角球被用于球穿过非上一次触碰方底线出界时使用。
 
-NOTE: In division B, the <<Aimless Kick [small]#(_division B only_)#, aimless kick rule>> might apply instead.
+NOTE: 在组别B(Division B)比赛中，若上一次敌方碰球不在己方半场，则判为无目标踢球(aimless kick)。
 
-==== Corner Kick
-.Definition
-The ball has to be placed 0.2 meters from the closest touch line and 0.2 meters from the goal line.
+==== 角球
+.定义
+球应放置在距离出界最近的边线距离0.2m，距离底线0.2m的位置。
 
-After the ball has been placed, a <<Direct Free Kick, direct free kick>> is awarded to the opponent of the team that last touched the ball before it left the field.
+球在放置后，应奖励给出界前上次碰球的对手一个<<Direct Free Kick, 直接任意球>> 。
 
-.Usage
-A corner kick is used to restart the game after the ball left the field by crossing the goal line of the team that touched the ball last.
+.使用
+角球被用于球穿过上一次触碰方底线出界时使用。
