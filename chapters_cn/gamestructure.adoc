@@ -7,7 +7,7 @@
 * <<Game Controller Operator, game controller operator>>
 * <<Vision Expert, vision expert>>
 
-通常，这些角色由两个非参赛队伍担任，其中一个队伍提供<<Referee, referee>>和<<Game Controller Operator, game controller operator>>，另一个团队提供 <<Assistant Referee, assistant referee>> 和<<Vision Expert, vision expert>>。 角色的分配由<<Organizing Committee, organizing committee>>决定。每个参赛团队的成员都必须熟悉这些人员。
+通常，这些角色由两个非参赛队伍担任，其中一个队伍提供<<Referee, referee>>和<<Game Controller Operator, game controller operator>>，另一个队伍提供 <<Assistant Referee, assistant referee>> 和<<Vision Expert, vision expert>>。 角色的分配由<<Organizing Committee, 委员会>>决定。每个参赛团队的成员都必须熟悉这些人员。
 
 ==== 裁判
 每场比赛由裁判控制。他完全有权执行小型组比赛相关的规则。建议裁判使用场地旁边的指定步行区域（参见<<Field Setup>>）。
@@ -75,7 +75,7 @@
 所有在比赛中发挥作用的人（<<Impartial Roles, impartial>> 或者 <<Team-Specific Roles, team-specific>>）必须在比赛开始前至少10分钟做好以下准备：
 
 ==== 比赛结果表
-<<Referee, referee>>从<<Organizing Committee, organizing committee>>获得比赛结果表。 比赛结束后，裁判填写最终比分，收集所需签名，并将表格提交给 <<Organizing Committee, organizing committee>>。
+<<Referee, referee>>从<<Organizing Committee, 委员会>>获得比赛结果表。 比赛结束后，裁判填写最终比分，收集所需签名，并将表格提交给 <<Organizing Committee, 委员会>>。
 
 NOTE: 在获得比赛结果表时，裁判还可以使用官方的 <<Ball, ball>>和裁判设备，如哨子或红牌和黄牌（如果提供的话）。
 
@@ -88,7 +88,7 @@ NOTE: 在获得比赛结果表时，裁判还可以使用官方的 <<Ball, ball>
 但是，如果两队都喜欢相同的颜色，裁判会随机分配颜色。 在这种情况下，球队在比赛的前半段之后以及加时赛的前半段之后切换颜色（如果适用）。
 
 ==== 选择半场和开球
-<<Referee, referee>> 用<<Robot Handler, robot handlers>>投掷硬币。 获胜队将在比赛的前半段选择进攻的目标。 另一支球队<<Kick-Off, kick-off>> 以开始比赛。
+<<Referee, referee>> 向<<Robot Handler, robot handlers>>投掷硬币。 获胜队将在比赛的前半段选择进攻的目标。 另一支球队<<Kick-Off, kick-off>> 以开始比赛。
 
 ==== 选择守门员ID
 <<Referee, referee>> 询问 <<Robot Handler, robot handlers>> 他们将使用哪个机器人作为守门员，并将此信息转发给<<Game Controller Operator, game controller operator>>。

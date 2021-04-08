@@ -1,10 +1,10 @@
 == 机器人
 
 === 机器人的数量
-比赛由两个队进行，每个队由不超过8个的A区机器人和不超过6个的B区机器人组成，其中一个可以是守门员。每个机器人必须根据其视觉图案清晰地编号，以便裁判在比赛中识别它。在比赛前必须指定守门员的ID（参见<<Selecting Keeper ID>>）。
+比赛由两个队进行，每个队由不超过6个的B区机器人组成，其中一个可以是守门员。每个机器人必须根据其视觉图案清晰地编号，以便裁判在比赛中识别它。在比赛前必须指定守门员的ID（参见<<_选择守门员id>>）。
 
 === 软件和硬件限制
-如果不符合 <<Referee, referee>> 规则，可以强制一队从场地上移除机器人。<<Technical Committee, technical committee>> 的成员也可以在比赛的任何时刻检查机器人的硬件和软件限制。
+如果不符合 <<Referee, referee>> 规则，可以强制一队从场地上移除机器人。<<_技术委员会, 委员会>>的成员也可以在比赛的任何时刻检查机器人的硬件和软件限制。
 
 如果一个团队无法提供至少一个满足规则的机器人，该团队将被 <<Forced Forfeit, forced to forfeit>>
 
@@ -27,15 +27,15 @@
 ==== 视觉图案
 所有参赛团队必须遵守 <<Vision, shared vision system>> 的既定操作要求。 尤其是，团队必需在他们的机器人顶部使用一组标准化的颜色和图案。
 
-为确保与共享视觉系统的标准化模式兼容，所有团队必须确保所有机器人都有一个平坦的表面，顶部有足够的空间。 机器人顶部的颜色必须是黑色或深灰色，并具有哑光（无光泽）表面，以减少眩光。 标准视觉图案是半径为0.085米的圆形，在机器人正面线性切割到距离中心0.055米的距离，如 <<standard-vision-pattern, figure 5>> 所示。 团队必须确保图案完整出现在他们的机器人顶部。
+为确保与共享视觉系统的标准化模式兼容，所有团队必须确保所有机器人都有一个平坦的表面，顶部有足够的空间。 机器人顶部的颜色必须是黑色或深灰色，并具有哑光（无光泽）表面，以减少眩光。 标准视觉图案是半径为0.085米的圆形，在机器人正面线性切割到距离中心0.055米的距离，如 <<standard-vision-pattern, Figure 3>> 所示。 团队必须确保图案完整出现在他们的机器人顶部。
 
 [[standard-vision-pattern]]
 .Standard Vision Pattern Dimensions
 image::standard_pattern2010.png[]
 
-每个机器人的图案都必须是<<standard-vision-colors, figure 6>>所示图案中的一种。不允许两个机器人使用同一个图案。
+每个机器人的图案都必须是<<standard-vision-colors, Figure 4>>所示图案中的一种。不允许两个机器人使用同一个图案。
 
-机器人中间的圆点颜色决定队伍的归属，并且颜色要么是蓝色要么是黄色（参考<<Choosing Team Colors>>)。其他四个圆点颜色编码机器人的ID。为了保证每个队伍使用相同的颜色，<<Organizing Committee, organizing committee>>在比赛中提供足够的彩色纸张。
+机器人中间的圆点颜色决定队伍的归属，并且颜色要么是蓝色要么是黄色（参考<<Choosing Team Colors>>)。其他四个圆点颜色编码机器人的ID。为了保证每个队伍使用相同的颜色，<<Organizing Committee, 委员会>>在比赛中提供足够的彩色纸张。
 
 NOTE: 鼓励团队选择ID为0到7的颜色分配，因为他们在实验中被发现更稳定，因为后面的两个点“color-bleed”彼此之间没有风险。
 
@@ -44,11 +44,11 @@ NOTE: 鼓励团队选择ID为0到7的颜色分配，因为他们在实验中被�
 image::standard_colors2010.png[width=500]
 
 ==== 无线电通信
-使用无线通信的队伍必须通知 <<Organizing Committee, organizing committee>> 无线通信的方法，电源和频率。报名后如有任何变动，必须尽快通知<<Organizing Committee, organizing committee>>。为了避免干扰，一个团队必须能够在匹配之前从两个载波频率中进行选择。无线通信的类型必须符合举办比赛国家的法律规定。遵守当地法律是竞争团队的责任。
+使用无线通信的队伍必须通知 <<Organizing Committee, 委员会>> 无线通信的方法，电源和频率。报名后如有任何变动，必须尽快通知<<Organizing Committee, 委员会>>。为了避免干扰，一个团队必须能够在匹配之前从两个载波频率中进行选择。无线通信的类型必须符合举办比赛国家的法律规定。遵守当地法律是竞争团队的责任。
 
-无线通信的类型也可能受到<<Local Organizing Committee, local organizing committee>>的限制。当地组委会将尽早向社区公布任何限制措施。
+无线通信的类型也可能受到<<Local Organizing Committee, 当地委员会>>的限制。当地组委会将尽早向社区公布任何限制措施。
 
 NOTE: 不允许使用蓝牙，因为它不能固定在频率通道上。
 
 ==== 自主权
-机器人设备必须是完全自主的。在匹配过程中，不允许人工操作员向系统输入任何信息，除非在<<Overview，breaks>>或在<<Timeouts，timeout>>期间输入。忽略此规则被视为<<Unsporting Behavior，unsporting behavior>>。
+机器人设备必须是完全自主的。在匹配过程中，不允许人工操作员向系统输入任何信息，除非在<<Overview, breaks>>或在<<Timeouts, timeout>>期间输入。忽略此规则被视为<<Unsporting Behavior, unsporting behavior>>。

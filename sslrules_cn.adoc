@@ -1,8 +1,7 @@
 :imagesdir: images/
 
-= RoboCup小型组2019年规则
+= RoboCup小型组2020年规则
 {docdate}
-翻译：ZJUNlict
 :toc:
 
 // add icons from fontawesome in a up-to-date version
