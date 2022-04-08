@@ -1,6 +1,6 @@
 :imagesdir: images/
 
-= RoboCup中国公开赛小型组2021年规则
+= RoboCup中国公开赛小型组2022年规则
 {docdate}
 :toc:
 
