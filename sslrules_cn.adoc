@@ -16,24 +16,24 @@ endif::basebackend-html[]
 
 NOTE: References to the male gender in the rules with respect to referees, team members, officials, etc. are for simplification and apply to both males and females.
 
-include::chapters_cn/introduction.adoc[]
+include::chapters_cn/1_introduction.adoc[]
 
-include::chapters_cn/playingenvironment.adoc[]
+include::chapters_cn/2_playingenvironment.adoc[]
 
-include::chapters_cn/robots.adoc[]
+include::chapters_cn/3_robots.adoc[]
 
-include::chapters_cn/gamestructure.adoc[]
+include::chapters_cn/4_gamestructure.adoc[]
 
-include::chapters_cn/refereecommands.adoc[]
+include::chapters_cn/5_refereecommands.adoc[]
 
-include::chapters_cn/ballleavesthefield.adoc[]
+include::chapters_cn/6_ballleavesthefield.adoc[]
 
-include::chapters_cn/scoringgoals.adoc[]
+include::chapters_cn/7_scoringgoals.adoc[]
 
-include::chapters_cn/offenses.adoc[]
+include::chapters_cn/8_offenses.adoc[]
 
-include::chapters_cn/substitution.adoc[]
+include::chapters_cn/9_substitution.adoc[]
 
-include::chapters_cn/shootout.adoc[]
+include::chapters_cn/10_shootout.adoc[]
 
 include::chapters_cn/appendix.adoc[]
