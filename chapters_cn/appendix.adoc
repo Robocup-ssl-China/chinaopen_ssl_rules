@@ -1,17 +1,4 @@
 [appendix]
-== 后续年份比赛规划
-
-[cols="1,1,1,3a"]
-|===
-|年份|机器人数量|场地大小|其他说明
-
-|2022|8vs8|12mx9m|大调整，扩场地，扩机器人数量
-|2023|11vs11|12mx9m|小调整，扩机器人数量
-
-具体变动参照2022年国际赛规则改动
-|===
-
-[appendix]
 == Terminology
 === Ball In And Out Of Play
 When the match is <<Stopping The Game, stopped>>, the ball is considered *out of play* until it has been brought into play.
@@ -21,9 +8,10 @@ When the match is <<Resuming The Game, resumed>>, the ball is considered *in pla
 NOTE: see <<Double Touch, double touch>> for the rationale of the 0.05 meter distance
 
 
-=== Ball Manipulation
+=== 碰球操作
 Shooting and <<Dribbling Device, dribbling>> is considered as manipulating the ball, the ball accidentally bouncing off the hull is not.
 
+踢球和持球被认为是碰球操作(Ball Manipulation)
 
 [appendix]
 == Game Event Table

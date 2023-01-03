@@ -16,6 +16,8 @@ endif::basebackend-html[]
 
 NOTE: References to the male gender in the rules with respect to referees, team members, officials, etc. are for simplification and apply to both males and females.
 
+include::chapters_cn/0_defines.adoc[]
+
 include::chapters_cn/1_introduction.adoc[]
 
 include::chapters_cn/2_playingenvironment.adoc[]
