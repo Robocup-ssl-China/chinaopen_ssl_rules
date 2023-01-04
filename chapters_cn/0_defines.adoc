@@ -1,5 +1,9 @@
-//:__title__: RoboCup中国公开赛小型组2022年规则
-//:__title__: 
+:year: 2023
+:title: RoboCup中国公开赛小型组{year}年规则
+:header_left: RoboCup中国公开赛小型组{year}年规则
+:header_right: 小型足球机器人规则
+:scripts: cjk
+
 :param_robot_count: 8
 :param_pitch_length: 12
 :param_pitch_width: 9

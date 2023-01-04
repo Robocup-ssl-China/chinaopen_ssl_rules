@@ -2,21 +2,19 @@
 
 include::chapters_cn/0_defines.adoc[]
 
-= RoboCup中国公开赛小型组2022年规则
+= {title}
 {docdate}
 :toc:
 
 // add icons from fontawesome in a up-to-date version
-ifdef::basebackend-html[]
-++++
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-++++
-endif::basebackend-html[]
+// ifdef::basebackend-html[]
+// ++++
+// <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+// ++++
+// endif::basebackend-html[]
 
 :icons: font
 :numbered:
-
-NOTE: References to the male gender in the rules with respect to referees, team members, officials, etc. are for simplification and apply to both males and females.
 
 include::chapters_cn/1_introduction.adoc[]
 
