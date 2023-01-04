@@ -1,5 +1,7 @@
 :imagesdir: images/
 
+include::chapters_cn/0_defines.adoc[]
+
 = RoboCup中国公开赛小型组2022年规则
 {docdate}
 :toc:
@@ -15,8 +17,6 @@ endif::basebackend-html[]
 :numbered:
 
 NOTE: References to the male gender in the rules with respect to referees, team members, officials, etc. are for simplification and apply to both males and females.
-
-include::chapters_cn/0_defines.adoc[]
 
 include::chapters_cn/1_introduction.adoc[]
 

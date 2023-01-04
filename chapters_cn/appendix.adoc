@@ -1,17 +1,10 @@
 [appendix]
-== Terminology
-=== Ball In And Out Of Play
-When the match is <<Stopping The Game, stopped>>, the ball is considered *out of play* until it has been brought into play.
-
-When the match is <<Resuming The Game, resumed>>, the ball is considered *in play* until the next stoppage occurs. The match is resumed when <<Force Start, force start>> has been issued or the ball moved at least 0.05 meters following a <<Kick-Off, kick-off>>, <<Direct Free Kick, direct free kick>>, <<Indirect Free Kick, indirect free kick>> or <<Penalty Kick, penalty kick>>.
-
-NOTE: see <<Double Touch, double touch>> for the rationale of the 0.05 meter distance
-
+== 专业术语(Terminology)
 
 === 碰球操作
 Shooting and <<Dribbling Device, dribbling>> is considered as manipulating the ball, the ball accidentally bouncing off the hull is not.
 
-踢球和持球被认为是碰球操作(Ball Manipulation)
+踢球和<<_运球装置, 持球>>被认为是碰球操作(Ball Manipulation)。
 
 [appendix]
 == Game Event Table
