@@ -5,6 +5,7 @@ include::chapters_cn/0_defines.adoc[]
 = {title}
 {docdate}
 :toc:
+:toc-title: 目录
 
 // add icons from fontawesome in a up-to-date version
 // ifdef::basebackend-html[]

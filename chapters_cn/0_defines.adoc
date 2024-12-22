@@ -1,10 +1,10 @@
-:year: 2023
+:year: 2024
 :title: RoboCup中国公开赛小型组{year}年规则
 :header_left: RoboCup中国公开赛小型组{year}年规则
 :header_right: 小型足球机器人规则
 :scripts: cjk
 
-:param_robot_count: 8
+:param_robot_count: 11
 :param_pitch_length: 12
 :param_pitch_width: 9
 :param_pitch_margin: 0.7
@@ -13,9 +13,9 @@
 :param_pitch_length_with_margin: 13.4
 // pitch_width_with_margin = pitch_width + 2*pitch_margin
 :param_pitch_width_with_margin: 10.4
-:param_penalty_length: 2.4
-:param_penalty_width: 1.2
+:param_penalty_length: 3.6
+:param_penalty_width: 1.8
 // penelty_dist = pitch_length*2/3
-:param_penelty_dist: 8
-:image_field_demensions: quad-size-field.png
-:image_goal_detail: goal_detail_divisionA.png
+:param_penalty_dist: 8
+:image_field_demensions: quad-size-field11vs11.png
+:image_goal_detail: goal_detail_divisionA11vs11.png
