@@ -1,6 +1,6 @@
-:year: 2024
-:title: 2024年第八届浙江省大学生机器人竞赛-小型足球机器人
-:header_left: 2024年第八届浙江省大学生机器人竞赛
+:year: 2025
+:title: 2025年第九届浙江省大学生机器人竞赛-小型足球机器人
+:header_left: 2025年第九届浙江省大学生机器人竞赛
 :header_right: 小型足球机器人团体对抗赛规则
 :scripts: cjk
 
@@ -16,6 +16,6 @@
 :param_penalty_length: 2.0
 :param_penalty_width: 1.0
 // penelty_dist = pitch_length*2/3
-:param_penelty_dist: 6
-:image_field_demensions: double-size-field.png
-:image_goal_detail: goal_detail_divisionB.png
+:param_penalty_dist: 6
+:image_field_demensions: double-size-field-hockey.svg
+:image_goal_detail: goal_detail_divisionB.png 
