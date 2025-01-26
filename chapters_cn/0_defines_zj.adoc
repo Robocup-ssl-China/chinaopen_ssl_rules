@@ -19,3 +19,4 @@
 :param_penalty_dist: 6
 :image_field_demensions: double-size-field-hockey.svg
 :image_goal_detail: goal_detail_divisionB.png 
+:zj_padding_define: 棕色区域为填充护栏，一般采用泡沫等缓冲材料。

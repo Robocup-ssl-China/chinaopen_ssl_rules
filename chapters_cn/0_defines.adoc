@@ -1,4 +1,4 @@
-:year: 2024
+:year: 2025
 :title: RoboCup中国公开赛小型组{year}年规则
 :header_left: RoboCup中国公开赛小型组{year}年规则
 :header_right: 小型足球机器人规则
@@ -17,5 +17,6 @@
 :param_penalty_width: 1.8
 // penelty_dist = pitch_length*2/3
 :param_penalty_dist: 8
-:image_field_demensions: quad-size-field11vs11.png
+:image_field_demensions: quad-size-field.svg
 :image_goal_detail: goal_detail_divisionA11vs11.png
+:zj_padding_define:
