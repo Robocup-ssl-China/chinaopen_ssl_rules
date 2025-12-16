@@ -1,6 +1,7 @@
-:year: 2025
-:title: 2025年第九届浙江省大学生机器人竞赛-小型足球机器人
-:header_left: 2025年第九届浙江省大学生机器人竞赛
+:year: 2026
+:year_cn: 十
+:title: {year}年第{year_cn}届浙江省大学生机器人竞赛-小型足球机器人
+:header_left: {year}年第{year_cn}届浙江省大学生机器人竞赛
 :header_right: 小型足球机器人团体对抗赛规则
 :scripts: cjk
 

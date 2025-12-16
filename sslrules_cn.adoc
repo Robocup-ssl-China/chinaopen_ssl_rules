@@ -1,7 +1,7 @@
 :imagesdir: images/
 
-include::chapters_cn/0_defines.adoc[]
-// include::chapters_cn/0_defines_zj.adoc[]
+// include::chapters_cn/0_defines.adoc[]
+include::chapters_cn/0_defines_zj.adoc[]
 
 = {title}
 {docdate}
